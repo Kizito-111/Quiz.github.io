@@ -1,0 +1,169 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+/**
+   Project by Kizito Eke
+   Edinburg Napier University
+   2022
+ **/
+
+:root {
+    background-color: hsl(134, 64%, 20%);
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: 'Nova Square',
+        cursive;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 5.4rem;
+    margin-bottom: 5rem;
+
+}
+
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 80rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    background: linear-gradient(90deg, hsl(190, 100%, 50%) 0%, hsl(195.1, 100%, 50%) 100%);
+    color: hsl(1, 0%, 3.1%);
+    font-size: 2.4rem;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    padding: 2rem 0;
+    width: 30rem;
+    border-radius: 0.25rem;
+}
+
+.btn:hover {
+    box-shadow: 0 6.5px 22.5px 0 hsl(195.2, 97.5%, 52.4%, 0.6);
+    transform: scale(1.03);
+    transition: transform 150ms;
+    cursor: pointer;
+}
+
+.btn[disabled]:hover {
+    box-shadow: none;
+    transform: none;
+    cursor: not-allowed;
+}
+
+#highscore-btn {
+    background: linear-gradient(90deg, hsl(57.9, 100%, 50%) 0%, hsl(56.5, 100%, 50%) 100%);
+}
+
+
+#highscore-btn:hover {
+    box-shadow: 0 6.5px 22.5px 0 hsl(58, 100%, 46.7%, 0.5);
+}
+
+.fa-play-circle {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+}
+
+.fa-crown {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+}
+
+small {
+    color: hsl(0, 0%, 100%);
+    font-size: 3rem;
+    position: absolute;
+    bottom: 0;
+    left: 56rem;
+}
+
+@media screen and (max-width: 48em) {
+    small {
+        position: absolute;
+        left: 20rem;
+    }
+}
+
+/* End Page CSS */
+.end-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+    width: 100%;
+}
+
+input {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    width: 20rem;
+    border: none;
+    box-shadow: 0 2px 22.5px 0 hsl(180, 100%, 50%, 0.5);
+}
+
+input::placeholder {
+    color: hsl(221.1, 8.3%, 55.1%);
+}
+
+#username {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#end-text {
+    color: hsl(0, 0%, 100%);
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+#saveScoreBtn {
+    border: none;
+}
+
+.fa-home {
+    color: hsl(0, 0%, 3.1%);
+    font-size: 2rem;
+    margin-left: 1rem;
+}
